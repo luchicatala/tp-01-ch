@@ -1,0 +1,148 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+
+/* selector universal, para todo el documento */
+*{
+	box-sizing: border-box;
+	/* descuenta del width y height, lo sumado en padding y border */
+}
+
+body{
+	font-family: 'Raleway', sans-serif;
+	margin: 0; /* 4 margenes: margin-top margin-right margin-bottom margin-right, si hay 2 valores, el primero es arriba y abajo y el segundo para los costados */
+}
+ 
+/* Resets */
+/* agrupacion de selectores */
+ ul, ol{
+	list-style: none; /* elimina la viñeta */
+	margin: 0;
+	padding: 0; /* relleno, dentro del contenedor */
+ }
+
+ figure{
+ 	margin: 0; /* distanciamiento, fuera del contenedor */
+ }
+
+.main-header{
+	width: 1200px;
+	border: solid 1px red;
+	margin: auto;
+	padding: 20px 0;
+}
+.logo{
+	float: left;
+	border: solid 1px green;
+}
+.main-nav{
+	float: right;
+	border: solid 1px yellow;
+}
+/* selector descendiente */
+.main-nav li{
+	float: left;
+	margin: 10px 0 0 15px; /* 10px arriba 0 a la derecha 0 abajo 8px derecha */
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.cleaner{
+	clear: both; /* LIMPIAR EL FLOAT */
+}
+
+#banner{
+	background: url(../images/indexbanner-bg3.jpg) center top no-repeat;
+	background-size: cover; /* la imagen ocupa todo el espacio en horizontal y vertical */
+}
+
+.container{
+	width: 1200px;
+	margin: auto;
+}
+
+.banner-tittle{
+	font-size: 45px;
+	color: white;
+	font-weight: bold;
+	padding-top: 120px;
+	margin: 0px;
+}
+
+.banner-second{
+	line-height: 30px;
+	color: #fff;
+	padding-bottom: 120px;
+	margin: 10px 0 0 0;
+
+}
+
+.register{
+	background-color: #06B4F2;
+	position: relative; /* distancimiento en relacion al el mismo */
+	top: 30px;
+}
+
+.register input{
+	width: 1000px;
+	height: 90px;
+	font-size: 16px;
+	font-family: inherit; /* se mantiene la tipografia elegida */
+	padding-left: 15px;
+}
+
+.register button{
+	border: none;
+	background-color: #06B4F2;
+	width: 195px;
+	height: 80px;
+	color: white;
+	font-family: inherit;
+	font-size: 14px;
+	text-transform: uppercase; /* MAYUSCULA */
+	font-weight: bold;
+}
+
+.producto{
+	border: dashed 1px green;
+	width: 300px;
+	text-align: center;
+	float: left;
+	margin-top: 100px;
+	margin-bottom: 80px;
+}
+
+.producto h4{
+	text-transform: uppercase;
+	padding-top: 10px;
+}
+
+.producto p{
+	font-size: 13px;
+	line-height: 25px;
+}
+
+
+/* 
+.logo{
+	width: 300px;
+	padding: 50px;
+	border: solid, 5px, red;
+}
+/* 
+
+/* 
+	tamaños:
+		ancho - width: porcentaje o pixeles;
+		alto - height: porcentaje o pixeles;
+
+	modelo de caja - box model
+		- width
+		- height
+		- padding (se sumo a los pixeles del contendor)
+		- border
+			border-style (solid-linea sola, dashed-linitas, dotted-puntitos, double-doblelinea)
+			border-width (grosor en pixeles)
+			border-color
+			border: ;
+		- margin
+*/
