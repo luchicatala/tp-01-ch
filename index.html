@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width" > <!-- viwport: area visible de la pagina / contenido se adapte al ancho del dispositivo = device!-->
 	<title>Maquetación Básica</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -23,7 +24,7 @@
 	</header>
 
 	<!-- banner -->
-	<div id="banner">
+	<div id="banner"> <!-- imagen ubicada en css -->
 		<div class="container">
 		    <h2 class="banner-tittle">Regular Updates</h2>
 		    <p class="banner-second">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Temporibus dolores officiis.</p>
@@ -81,17 +82,17 @@
 			<ul>
 				<li>
 					<h3>Retina Ready</h3>
-					<p>Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit.</p>
+					<p>Lorem ipsum dolor sit amet,consectetur adipisicing elit.</p>
 					<img src="images/ser1.png" alt="retina ready">
 				</li>
 				<li>
-					<h3>Easy Customize</h3>
-					<p>Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit.</p>
-					<img src="images/ser2.png" alt="easy customize">
+					<h3 id="space-text">Easy Customize</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					<img id="space-text" src="images/ser2.png" alt="easy customize">
 				<li>
-					<h3>Pixel Perfect</h3>
-					<p>Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit.</p>
-					<img src="images/ser3.png" alt="pixel perfect">
+					<h3 id="space-text">Pixel Perfect</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					<img id="space-text" src="images/ser3.png" alt="pixel perfect">
 				</li>
 			</ul>
 		</article>
@@ -104,17 +105,17 @@
 			<ul>
 				<li>
 					<h3>Unlimited Colors</h3>
-					<p>Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 					<img src="images/ser4.png" alt="retina ready">
 				</li>
 				<li>
-					<h3>Features</h3>
-					<p>Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit.</p>
-					<img src="images/ser5.png" alt="easy customize">
+					<h3 id="space-text">Features</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					<img id="space-text" src="images/ser5.png" alt="easy customize">
 				<li>
-					<h3>Support Today</h3>
-					<p>Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit. </p>
-					<img src="images/ser6.png" alt="pixel perfect">
+					<h3 id="space-text">Support Today</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+					<img id="space-text" src="images/ser6.png" alt="pixel perfect">
 				</li>
 			</ul>
 		</article>
@@ -129,103 +130,111 @@
 			<p class="bajadasecond">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis non.</p>
 
 			<article class="prices">
-				<h4>Small Package</h4>
-				<h2><sup>$</sup>15<sup>.9</sup></h2>
+				<h3>Small Package</h4>
+				<h2><sup class="sup-valor">$</sup>15<sup class="sup-valor">.9</sup></h2>
 				<p>/month</p>
-				<table>
+				<table width="100%">
 					<tr>
-						<td>Hard Drive, GB</td>
-						<td>2</td>
+						<td width="70%" class="first-line">Hard Drive, GB</td>
+						<td width="30%" class="small-line">2</td>
 					</tr>
 					<tr>
-						<td>Transfer, GB</td>
-						<td>1</td>
+						<td width="70%" class="first-line">Transfer, GB</td>
+						<td width="30%" class="small-line">1</td>
 					</tr>
 					<tr>
-						<td>Data bases</td>
-						<td>1</td>
+						<td width="70%" class="first-line">Data bases</td>
+						<td width="30%" class="small-line">1</td>
 					</tr>
 					<tr>
-						<td>Dashboards</td>
-						<td>1</td>
+						<td width="70%" class="first-line">Dashboards</td>
+						<td width="30%" class="small-line">1</td>
 					</tr>
 				</table>
-				<a href="#">Select plan</a>
+				<nav id="botton-plan">
+					<a href="#">Select plan</a>
+				</nav>
 			</article>
 
 			<article class="prices">
-				<h4>Normal Package</h4>
-				<h2><sup>$</sup>45<sup>.9</sup></h2>
+				<h3>Normal Package</h4>
+				<h2><sup class="sup-valor">$</sup>45<sup class="sup-valor">.9</sup></h2>
 				<p>/month</p>
-				<table>
+				<table width="100%"> <!-- para que ocupe el 100% -->
 					<tr>
-						<td>Hard Drive, GB</td>
-						<td>5</td>
+						<td width="70%"  class="first-line">Hard Drive, GB</td>
+						<td width="30%" class="normal-line">5</td>
 					</tr>
 					<tr>
-						<td>Transfer, GB</td>
-						<td>2</td>
+						<td width="70%" class="first-line">Transfer, GB</td>
+						<td width="30%" class="normal-line">2</td>
 					</tr>
 					<tr>
-						<td>Data bases</td>
-						<td>2</td>
+						<td width="70%" class="first-line">Data bases</td>
+						<td width="30%" class="normal-line">2</td>
 					</tr>
 					<tr>
-						<td>Dashboards</td>
-						<td>2</td>
+						<td width="70%" class="first-line">Dashboards</td>
+						<td width="30%" class="normal-line">2</td>
 					</tr>
 				</table>
-				<a href="#">Select plan</a>
+				<nav id="botton-plan">
+					<a href="#">Select plan</a>
+				</nav>
 			</article>
 
 			<article class="prices">
-				<h4>Big Package</h4>
-				<h2><sup>$</sup>95<sup>.9</sup></h2>
+				<h3>Big Package</h4>
+				<h2><sup class="sup-valor">$</sup>95<sup class="sup-valor">.9</sup></h2>
 				<p>/month</p>
-				<table>
+				<table width="100%">
 					<tr>
-						<td>Hard Drive, GB</td>
-						<td>12</td>
+						<td width="70%" class="first-line">Hard Drive, GB</td>
+						<td width="30%" class="big-line">12</td>
 					</tr>
 					<tr>
-						<td>Transfer, GB</td>
-						<td>5</td>
+						<td width="70%" class="first-line">Transfer, GB</td>
+						<td width="30%" class="big-line">5</td>
 					</tr>
 					<tr>
-						<td>Data bases</td>
-						<td>5</td>
+						<td width="70%" class="first-line">Data bases</td>
+						<td width="30%" class="big-line">5</td>
 					</tr>
 					<tr>
-						<td>Dashboards</td>
-						<td>5</td>
+						<td width="70%" class="first-line">Dashboards</td>
+						<td width="30%" class="big-line">5</td>
 					</tr>
 				</table>
-				<a href="#">Select plan</a>
+				<nav id="botton-plan">
+					<a href="#">Select plan</a>
+				</nav>
 			</article>
 
 			<article class="prices no-margin">
-				<h4>Best Package</h4>
-				<h2><sup>$</sup>115<sup>.9</sup></h2>
+				<h3>Best Package</h4>
+				<h2><sup class="sup-valor">$</sup>115<sup class="sup-valor">.9</sup></h2>
 				<p>/month</p>
-				<table>
+				<table width="100%">
 					<tr>
-						<td>Hard Drive, GB</td>
-						<td>20</td>
+						<td width="70%" class="first-line">Hard Drive, GB</td>
+						<td width="30%" class="best-line">20</td>
 					</tr>
 					<tr>
-						<td>Transfer, GB</td>
-						<td>10</td>
+						<td width="70%" class="first-line">Transfer, GB</td>
+						<td width="30%" class="best-line">10</td>
 					</tr>
 					<tr>
-						<td>Data bases</td>
-						<td>10</td>
+						<td width="70%" class="first-line">Data bases</td>
+						<td width="30%" class="best-line">10</td>
 					</tr>
 					<tr>
-						<td>Dashboards</td>
-						<td>10</td>
+						<td width="70%" class="first-line">Dashboards</td>
+						<td width="30%" class="best-line">10</td>
 					</tr>
 				</table>
-				<a href="#">Select plan</a>
+				<nav id="botton-plan">
+					<a href="#">Select plan</a>
+				</nav>
 			</article>
 		</article>
 		<div class="cleaner"></div>
@@ -234,7 +243,7 @@
 
 	<!-- footer -->
 	<footer class="main-footer">
-		<h3>Hosting use <span>500,000</span> happy customers. Want to see services?</h3>
+		<h3>Hosting use <span id="valor">500,000</span> happy customers. Want to see services?</h3>
 		<article class="bg-dark">
 			<article class="container">
 				<p class="copyright">© 2015 Coderland. All right reserved.</p>
